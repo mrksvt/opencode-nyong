@@ -1,0 +1,229 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "9router/nararouter2/mimo-v2.5-pro-hermes",
+      "variant": "max",
+      "fallback_models": [
+        { "model": "9router/nararouter2/mimo-v2.5-hermes" },
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/nararouter/mistral-large" },
+        { "model": "9router/nararouter/deepseek-v4-flash" },
+        { "model": "9router/cx/gpt-5.4-mini" },
+        { "model": "9router/ag/gemini-3-flash" }
+      ]
+    },
+    "sisyphus-junior": {
+      "model": "9router/nararouter2/mimo-v2.5-hermes",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/nararouter/mistral-large" },
+        { "model": "9router/nararouter/deepseek-v4-flash" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "oracle": {
+      "model": "9router/cc/claude-opus-4-8",
+      "variant": "high",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/cc/claude-opus-4-7" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/cx/gpt-5.4-mini" },
+        { "model": "9router/nararouter/deepseek-v4-flash" }
+      ]
+    },
+    "hephaestus": {
+      "model": "9router/nararouter2/mimo-v2.5-hermes",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/nararouter/mistral-large" },
+        { "model": "9router/nararouter/deepseek-v4-flash" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "librarian": {
+      "model": "9router/cc/claude-sonnet-5",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cx/gpt-5.4-mini" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/nararouter/mistral-large" },
+        { "model": "9router/nararouter/deepseek-v4-flash" }
+      ]
+    },
+    "explore": {
+      "model": "9router/nararouter/mistral-large",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter/deepseek-v4-flash" },
+        { "model": "9router/nararouter2/mimo-v2.5-hermes" },
+        { "model": "9router/ag/gemini-3-flash" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "prometheus": {
+      "model": "9router/cc/claude-opus-4-8",
+      "variant": "max",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/cc/claude-opus-4-7" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "metis": {
+      "model": "9router/cc/claude-sonnet-5",
+      "variant": "high",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cx/gpt-5.4-mini" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/nararouter/deepseek-v4-flash" }
+      ]
+    },
+    "momus": {
+      "model": "9router/cc/claude-opus-4-7",
+      "variant": "xhigh",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/nararouter/deepseek-v4-flash" }
+      ]
+    },
+    "atlas": {
+      "model": "9router/nararouter2/mimo-v2.5-hermes",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/nararouter/mistral-large" },
+        { "model": "9router/nararouter2/mimo-v2.5-hermes" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "multimodal-looker": {
+      "model": "9router/ag/gemini-3-flash",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/ag/gemini-pro-agent" },
+        { "model": "9router/ag/gemini-3-flash-agent" },
+        { "model": "9router/ag/gemini-3.5-flash-low" },
+        { "model": "9router/gc/gemini-2.5-pro" }
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "9router/nararouter/mistral-large",
+      "variant": "high",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter/deepseek-v4-flash" },
+        { "model": "9router/nararouter2/mimo-v2.5-hermes" },
+        { "model": "9router/ag/gemini-3-flash" },
+        { "model": "9router/cc/claude-sonnet-5" }
+      ]
+    },
+    "ultrabrain": {
+      "model": "9router/cc/claude-opus-4-8",
+      "variant": "xhigh",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-opus-4-7" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/kr/qwen3-coder-next" }
+      ]
+    },
+    "deep": {
+      "model": "9router/nararouter2/mimo-v2.5-pro-hermes",
+      "variant": "high",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-flash" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "artistry": {
+      "model": "9router/cc/claude-fable-5",
+      "variant": "high",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "quick": {
+      "model": "9router/nararouter2/mimo-v2.5-hermes",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter/mistral-large" },
+        { "model": "9router/nararouter2/mimo-v2.5-hermes" },
+        { "model": "9router/ag/gemini-3-flash" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "unspecified-low": {
+      "model": "9router/nararouter2/mimo-v2.5-hermes",
+      "variant": "medium",
+      "fallback_models": [
+        { "model": "9router/nararouter/mistral-large" },
+        { "model": "9router/nararouter2/mimo-v2.5-hermes" },
+        { "model": "9router/ag/gemini-3-flash" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "unspecified-high": {
+      "model": "9router/nararouter2/mimo-v2.5-pro-hermes",
+      "variant": "high",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-flash" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    },
+    "writing": {
+      "model": "9router/cc/claude-fable-5",
+      "variant": "high",
+      "fallback_models": [
+        { "model": "9router/nararouter/deepseek-v4-pro" },
+        { "model": "9router/nararouter2/mimo-v2.5-pro-hermes" },
+        { "model": "9router/cc/claude-sonnet-5" },
+        { "model": "9router/ag/claude-sonnet-4-6" },
+        { "model": "9router/cx/gpt-5.4-mini" }
+      ]
+    }
+  }
+}

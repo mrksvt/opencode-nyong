@@ -1,0 +1,16 @@
+[Unit]
+Description=NaraCLI Telegram Bridge
+After=network.target
+
+[Service]
+Type=simple
+User=mrksvt
+WorkingDirectory=/home/mrksvt/.bynara/agent/skills/telegram-notify
+Environment=TELEGRAM_BOT_TOKEN=<your-token>
+Environment=TELEGRAM_CHAT_ID=<your-chat-id>
+ExecStart=/usr/bin/python3 /home/mrksvt/.bynara/agent/skills/telegram-notify/telegram-bridge.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

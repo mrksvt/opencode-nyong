@@ -1,0 +1,1212 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "YOUR_API_KEY_HERE"
+      },
+      "models": {
+        "cc/claude-haiku-4-5-20251001": {
+          "name": "cc/claude-haiku-4-5-20251001",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cc/claude-fable-5": {
+          "name": "cc/claude-fable-5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cc/claude-opus-4-7": {
+          "name": "cc/claude-opus-4-7",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cc/claude-opus-4-8": {
+          "name": "cc/claude-opus-4-8",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cc/claude-sonnet-5": {
+          "name": "cc/claude-sonnet-5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/claude-opus-4-6-thinking": {
+          "name": "ag/claude-opus-4-6-thinking",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/claude-sonnet-4-6": {
+          "name": "ag/claude-sonnet-4-6",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/gemini-3-flash": {
+          "name": "ag/gemini-3-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/gemini-pro-agent": {
+          "name": "ag/gemini-pro-agent",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/gemini-3.1-pro-low": {
+          "name": "ag/gemini-3.1-pro-low",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/gemini-3-flash-agent": {
+          "name": "ag/gemini-3-flash-agent",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/gemini-3.5-flash-extra-low": {
+          "name": "ag/gemini-3.5-flash-extra-low",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ag/gemini-3.5-flash-low": {
+          "name": "ag/gemini-3.5-flash-low",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gc/gemini-2.5-flash": {
+          "name": "gc/gemini-2.5-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gc/gemini-2.5-pro": {
+          "name": "gc/gemini-2.5-pro",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gc/gemini-3.1-flash-lite-preview": {
+          "name": "gc/gemini-3.1-flash-lite-preview",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.4-mini": {
+          "name": "cx/gpt-5.4-mini",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.4-mini-review": {
+          "name": "cx/gpt-5.4-mini-review",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.5": {
+          "name": "cx/gpt-5.5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.5-review": {
+          "name": "cx/gpt-5.5-review",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-haiku-4.5-thinking-agentic": {
+          "name": "kr/claude-haiku-4.5-thinking-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-sonnet-4.5-thinking-agentic": {
+          "name": "kr/claude-sonnet-4.5-thinking-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-haiku-4.5": {
+          "name": "kr/claude-haiku-4.5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-haiku-4.5-agentic": {
+          "name": "kr/claude-haiku-4.5-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-haiku-4.5-thinking": {
+          "name": "kr/claude-haiku-4.5-thinking",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-sonnet-4.5": {
+          "name": "kr/claude-sonnet-4.5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-sonnet-4.5-agentic": {
+          "name": "kr/claude-sonnet-4.5-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/claude-sonnet-4.5-thinking": {
+          "name": "kr/claude-sonnet-4.5-thinking",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/deepseek-3.2": {
+          "name": "kr/deepseek-3.2",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/glm-5": {
+          "name": "kr/glm-5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/qwen3-coder-next": {
+          "name": "kr/qwen3-coder-next",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/claude-sonnet-5-bynara": {
+          "name": "nararouter/claude-sonnet-5-bynara",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nvidia/nemotron-3-ultra-550b-a55b": {
+          "name": "nvidia/nemotron-3-ultra-550b-a55b",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "oc/deepseek-v4-flash-free": {
+          "name": "oc/deepseek-v4-flash-free",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "oc/mimo-v2.5-free": {
+          "name": "oc/mimo-v2.5-free",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "oc/big-pickle": {
+          "name": "oc/big-pickle",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nvidia/deepseek-ai/deepseek-v4-flash": {
+          "name": "nvidia/deepseek-ai/deepseek-v4-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nvidia/mistralai/mistral-large-3-675b-instruct-2512": {
+          "name": "nvidia/mistralai/mistral-large-3-675b-instruct-2512",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/mimo-v2.5": {
+          "name": "nararouter/mimo-v2.5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/mistral-large": {
+          "name": "nararouter/mistral-large",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/mistral-medium-3-5": {
+          "name": "nararouter/mistral-medium-3-5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/tencent-hy3": {
+          "name": "nararouter/tencent-hy3",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/deepseek-v4-flash": {
+          "name": "nararouter2/deepseek-v4-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/deepseek-v4-pro": {
+          "name": "nararouter2/deepseek-v4-pro",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/mistral-medium-3-5": {
+          "name": "nararouter2/mistral-medium-3-5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/mistral-large": {
+          "name": "nararouter2/mistral-large",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/tencent-hy3": {
+          "name": "nararouter2/tencent-hy3",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "VSCode_Codex": {
+          "name": "VSCode_Codex",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "Copilot_Coder": {
+          "name": "Copilot_Coder",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "Claude": {
+          "name": "Claude",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/deepseek-v4-pro-bynara": {
+          "name": "nararouter2/deepseek-v4-pro-bynara",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/deepseek-v4-flash-bynara": {
+          "name": "nararouter2/deepseek-v4-flash-bynara",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/mimo-v2.5-pro-ultraspeed": {
+          "name": "nararouter/mimo-v2.5-pro-ultraspeed",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/agnes-2.5-flash": {
+          "name": "nararouter/agnes-2.5-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/agnes-2.0-flash": {
+          "name": "nararouter/agnes-2.0-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/gemini-3.5-flash": {
+          "name": "nararouter/gemini-3.5-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/agnes-2.5-flash": {
+          "name": "nararouter2/agnes-2.5-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/kimi-k2.7-code-free": {
+          "name": "nararouter/kimi-k2.7-code-free",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.6-luna": {
+          "name": "cx/gpt-5.6-luna",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.6-luna-review": {
+          "name": "cx/gpt-5.6-luna-review",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.6-sol": {
+          "name": "cx/gpt-5.6-sol",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.6-sol-review": {
+          "name": "cx/gpt-5.6-sol-review",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.6-terra-review": {
+          "name": "cx/gpt-5.6-terra-review",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "cx/gpt-5.6-terra": {
+          "name": "cx/gpt-5.6-terra",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-luna": {
+          "name": "kr/gpt-5.6-luna",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-luna-agentic": {
+          "name": "kr/gpt-5.6-luna-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-luna-thinking-agentic": {
+          "name": "kr/gpt-5.6-luna-thinking-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-sol-agentic": {
+          "name": "kr/gpt-5.6-sol-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-sol": {
+          "name": "kr/gpt-5.6-sol",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-luna-thinking": {
+          "name": "kr/gpt-5.6-luna-thinking",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-sol-thinking-agentic": {
+          "name": "kr/gpt-5.6-sol-thinking-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-sol-thinking": {
+          "name": "kr/gpt-5.6-sol-thinking",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-terra": {
+          "name": "kr/gpt-5.6-terra",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-terra-agentic": {
+          "name": "kr/gpt-5.6-terra-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-terra-thinking-agentic": {
+          "name": "kr/gpt-5.6-terra-thinking-agentic",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kr/gpt-5.6-terra-thinking": {
+          "name": "kr/gpt-5.6-terra-thinking",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/agnes-2.0-flash": {
+          "name": "nararouter2/agnes-2.0-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/glm-5.2-free": {
+          "name": "nararouter/glm-5.2-free",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/grok-4.5": {
+          "name": "nararouter/grok-4.5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/mimo-v2.5-hermes": {
+          "name": "nararouter2/mimo-v2.5-hermes",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter2/mimo-v2.5-pro-hermes": {
+          "name": "nararouter2/mimo-v2.5-pro-hermes",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/deepseek-v4-flash": {
+          "name": "nararouter/deepseek-v4-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/deepseek-v4-flash-bynara": {
+          "name": "nararouter/deepseek-v4-flash-bynara",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/deepseek-v4-pro-bynara": {
+          "name": "nararouter/deepseek-v4-pro-bynara",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/deepseek-v4-pro": {
+          "name": "nararouter/deepseek-v4-pro",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/muse-spark-1.1": {
+          "name": "nararouter/muse-spark-1.1",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter/grok-4.5-free": {
+          "name": "nararouter/grok-4.5-free",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/mimo-v2.5-pro": {
+          "name": "nararouter3/mimo-v2.5-pro",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/mimo-v2.5": {
+          "name": "nararouter3/mimo-v2.5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/mimo-v2.5-pro-ultraspeed": {
+          "name": "nararouter3/mimo-v2.5-pro-ultraspeed",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/mistral-large": {
+          "name": "nararouter3/mistral-large",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/mistral-medium-3-5": {
+          "name": "nararouter3/mistral-medium-3-5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/agnes-2.5-flash": {
+          "name": "nararouter3/agnes-2.5-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/tencent-hy3": {
+          "name": "nararouter3/tencent-hy3",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/agnes-2.0-flash": {
+          "name": "nararouter3/agnes-2.0-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nararouter3/gpt-5.4": {
+          "name": "nararouter3/gpt-5.4",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "model": "9router/nararouter/deepseek-v4-pro-bynara",
+  "instructions": [
+    "~/.config/opencode/ACID.md"
+  ],
+  "mcp": {
+    "pentest-ai": {
+      "type": "local",
+      "command": [
+        "ptai",
+        "mcp"
+      ],
+      "enabled": true
+    },
+    "headroom": {
+      "type": "local",
+      "command": [
+        "/home/mrksvt/.local/bin/headroom",
+        "mcp",
+        "serve"
+      ],
+      "enabled": true
+    },
+    "nara-telegram": {
+      "type": "local",
+      "command": [
+        "python",
+        "/home/mrksvt/.bynara/agent/skills/telegram-notify/mcp-server.py"
+      ],
+      "enabled": true
+    },
+    "piper-tts": {
+      "type": "local",
+      "command": [
+        "python",
+        "/home/mrksvt/.config/opencode/skills/piper-tts/mcp-server.py"
+      ],
+      "enabled": true
+    }
+  },
+  "agent": {
+    "explorer": {
+      "description": "Fast explorer subagent for codebase exploration",
+      "mode": "subagent",
+      "model": "9router/nararouter/kimi-k2.7-code-free"
+    }
+  }
+}

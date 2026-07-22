@@ -1,0 +1,23 @@
+{
+  "plugin": [
+    "oh-my-openagent@latest",
+    "superpowers@git+https://github.com/obra/superpowers.git"
+  ],
+  "model": "nararouter/mimo-v2.5-pro",
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "postman": {
+      "type": "local",
+      "command": ["npx", "-y", "@postman/postman-mcp-server"],
+      "enabled": true,
+      "environment": {
+        "POSTMAN_API_KEY": "YOUR_POSTMAN_API_KEY"
+      }
+    },
+    "mcp-mermaid": {
+      "type": "local",
+      "command": ["node", "/home/mrksvt/Documents/Github/mcp-mermaid/build/index.js"],
+      "enabled": true
+    }
+  }
+}
