@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-NaraCLI Telegram Interactive Bridge
+Opencode Telegram Interactive Bridge
 ====================================
-Dua arah: NaraCLI ↔ Telegram.
+Dua arah: Opencode ↔ Telegram.
 
-- NaraCLI kirim pertanyaan → Telegram user jawab
-- Telegram user kirim command → NaraCLI jalankan
+- Opencode kirim pertanyaan → Telegram user jawab
+- Telegram user kirim command → Opencode jalankan
 
 Shared state via JSON file (no database needed).
 
@@ -15,11 +15,11 @@ Setup:
   export TELEGRAM_CHAT_ID="..."
   python telegram-bridge.py
 
-NaraCLI helper:
-  python nara-telegram.py ask "Mau patch fitur apa?"
-  python nara-telegram.py ask --options "Fix auth,Add login,Refactor db"
-  python nara-telegram.py notify "✅ Build selesai"
-  python nara-telegram.py wait  # block sampai user jawab
+Opencode helper:
+  python telegram.py ask "Mau patch fitur apa?"
+  python telegram.py ask --options "Fix auth,Add login,Refactor db"
+  python telegram.py notify "✅ Build selesai"
+  python telegram.py wait  # block sampai user jawab
 """
 
 import os
@@ -43,9 +43,9 @@ from telegram.ext import (
 # ── Config ──────────────────────────────────────────────────────────────
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 AUTHORIZED_CHAT = os.environ.get("TELEGRAM_CHAT_ID")
-NARA_CLI = os.environ.get("NARA_CLI_PATH", "naracli")
+OPENCODE_CLI = os.environ.get("OPENCODE_CLI_PATH", "opencode")
 TIMEOUT = 300
-STATE_DIR = Path(os.environ.get("NARA_STATE_DIR", "/tmp/nara-telegram"))
+STATE_DIR = Path(os.environ.get("OPENCODE_STATE_DIR", "/tmp/telegram-notify"))
 STATE_FILE = STATE_DIR / "state.json"
 QUESTIONS_DIR = STATE_DIR / "questions"
 RESPONSES_DIR = STATE_DIR / "responses"
@@ -376,14 +376,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("⛔ Unauthorized.")
         return
 
-    text = """🤖 <b>NaraCLI Telegram Bridge</b>
+    text = """🤖 <b>Opencode Telegram Bridge</b>
 
 <b>Interactive Mode:</b>
-NaraCLI akan mengirim pertanyaan ke sini saat butuh input.
+Opencode akan mengirim pertanyaan ke sini saat butuh input.
 
 <b>Commands:</b>
 /run &lt;cmd&gt; - Jalankan shell command
-/nara &lt;task&gt; - Jalankan NaraCLI task
+/opencode &lt;task&gt; - Jalankan Opencode task
 /status - Lihat pending questions
 
 Jawaban dikirim langsung atau via inline buttons.
@@ -435,14 +435,14 @@ async def run_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"❌ {e}")
 
 
-async def run_nara(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def run_opencode(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not is_authorized(update):
         return
     task = " ".join(context.args) if context.args else ""
     if not task:
-        await update.message.reply_text("Usage: /nara <task>")
+        await update.message.reply_text("Usage: /opencode <task>")
         return
-    context.args = [f'{NARA_CLI} "{task}"']
+    context.args = [f'{OPENCODE_CLI} "{task}"']
     await run_command(update, context)
 
 
@@ -472,7 +472,7 @@ def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", start))
     app.add_handler(CommandHandler("run", run_command))
-    app.add_handler(CommandHandler("nara", run_nara))
+    app.add_handler(CommandHandler("opencode", run_opencode))
     app.add_handler(CommandHandler("status", status))
     app.add_handler(CallbackQueryHandler(handle_callback))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text_message))
