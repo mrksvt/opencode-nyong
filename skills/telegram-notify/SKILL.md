@@ -7,13 +7,13 @@ description: "Real-time bidirectional communication with Telegram. Send notifica
 
 ## Files
 
-- `mcp-server.py` — MCP server (auto-starts with NaraCLI/Opencode)
+- `mcp-server.py` — MCP server (auto-starts with Opencode)
 - `telegram-bridge.py` — Standalone bot server (alternative)
-- `nara-telegram.py` — CLI helper (alternative)
+- `telegram.py` — CLI helper (alternative)
 
 ## Setup (MCP - Recommended)
 
-MCP server otomatis aktif saat NaraCLI/Opencode start.
+MCP server otomatis aktif saat Opencode start.
 
 ### 1. Install dependency
 ```bash
@@ -27,14 +27,14 @@ export TELEGRAM_BOT_TOKEN="token dari @BotFather"
 export TELEGRAM_CHAT_ID="chat ID kamu"
 ```
 
-### 3. MCP config sudah aktif
-File: `~/.bynara/agent/mcp.json` sudah include:
+### 3. Install MCP
+File: `~/.config/opencode/agent/mcp.json` include:
 ```json
 {
   "mcpServers": {
-    "nara-telegram": {
+    "telegram-notify": {
       "command": "python",
-      "args": ["/home/mrksvt/.bynara/agent/skills/telegram-notify/mcp-server.py"]
+      "args": ["~/.config/opencode/agent/skills/telegram-notify/mcp-server.py"]
     }
   }
 }
@@ -55,7 +55,7 @@ MCP server akan start otomatis.
 ## Flow
 
 ```
-NaraCLI                    Telegram                  Kamu
+Opencode                    Telegram                  Kamu
    │                          │                       │
    │── telegram_ask() ──────▶ │                       │
    │   (MCP server write      │── ❓ Question? ──▶   │
@@ -67,11 +67,11 @@ NaraCLI                    Telegram                  Kamu
    │    response file)         │                       │
 ```
 
-## Usage dari NaraCLI
+## Usage dari Opencode
 
-NaraCLI akan otomatis pakai MCP tools saat ada di environment yang support MCP.
+Opencode akan otomatis pakai MCP tools saat ada di environment yang support MCP.
 
-Contoh flow yang NaraCLI bisa lakukan:
+Contoh flow yang Opencode bisa lakukan:
 1. `telegram_ask("Fitur mana?", options="Auth,DB,API")` → user pilih
 2. `telegram_ask_multi("Pilih semua yang perlu:", options="A,B,C")` → user pilih banyak
 3. `telegram_confirm("Patch sekarang?")` → user ya/tidak
