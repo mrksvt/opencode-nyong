@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """
-NaraCLI helper — kirim pertanyaan ke Telegram, tunggu jawaban.
+Opencode helper — kirim pertanyaan ke Telegram, tunggu jawaban.
 
 Usage:
   # Tanya bebas
-  python nara-telegram.py ask "Mau patch fitur apa?"
+  python telegram.py ask "Mau patch fitur apa?"
 
   # Tanya dengan pilihan (inline buttons)
-  python nara-telegram.py ask --options "Fix auth,Add login,Refactor db" "Pilih fitur:"
+  python telegram.py ask --options "Fix auth,Add login,Refactor db" "Pilih fitur:"
 
   # Yes/No confirmation
-  python nara-telegram.py confirm "Patch file config.yaml?"
+  python telegram.py confirm "Patch file config.yaml?"
 
   # Kirim notifikasi (no response needed)
-  python nara-telegram.py notify "✅ Build selesai"
+  python telegram.py notify "✅ Build selesai"
 
   # Tunggu jawaban (blocking)
-  python nara-telegram.py wait [timeout]
+  python telegram.py wait [timeout]
 
 Exit codes:
   0 = success
@@ -32,7 +32,7 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 
-STATE_DIR = Path(os.environ.get("NARA_STATE_DIR", "/tmp/nara-telegram"))
+STATE_DIR = Path(os.environ.get("OPENCODE_STATE_DIR", "/tmp/telegram-notify"))
 QUESTIONS_DIR = STATE_DIR / "questions"
 RESPONSES_DIR = STATE_DIR / "responses"
 
@@ -148,7 +148,7 @@ def wait_for_response(timeout: int = 300) -> str:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="NaraCLI Telegram Bridge Helper")
+    parser = argparse.ArgumentParser(description="Opencode Telegram Bridge Helper")
     sub = parser.add_subparsers(dest="command", required=True)
 
     # ask
