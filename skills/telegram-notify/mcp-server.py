@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-NaraCLI Telegram MCP Server
+Opencode Telegram MCP Server
 ============================
 MCP server untuk interactive Telegram bridge.
-Hidup saat NaraCLI/Opencode session aktif.
+Hidup saat Opencode session aktif.
 
 Tools:
   telegram_ask       - Tanya bebas
@@ -25,7 +25,7 @@ from mcp.server.fastmcp import FastMCP
 # ── Config ──────────────────────────────────────────────────────────────
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
-STATE_DIR = Path(os.environ.get("NARA_STATE_DIR", "/tmp/nara-telegram"))
+STATE_DIR = Path(os.environ.get("OPENCODE_STATE_DIR", "/tmp/telegram-notify"))
 QUESTIONS_DIR = STATE_DIR / "questions"
 RESPONSES_DIR = STATE_DIR / "responses"
 TIMEOUT = int(os.environ.get("TELEGRAM_TIMEOUT", "120"))
@@ -66,7 +66,7 @@ def wait_for_response(qid: str, timeout: int = TIMEOUT) -> str:
     raise TimeoutError(f"Telegram response timeout ({timeout}s)")
 
 # ── MCP Server ──────────────────────────────────────────────────────────
-mcp = FastMCP("nara-telegram")
+mcp = FastMCP("telegram-notify")
 
 
 @mcp.tool()
@@ -443,7 +443,7 @@ if __name__ == "__main__":
             traceback.print_exc(file=sys.stderr)
     
     async def main():
-        print("🤖 NaraCLI Telegram MCP Server starting...", file=sys.stderr)
+        print("🤖 Opencode Telegram MCP Server starting...", file=sys.stderr)
         asyncio.create_task(_run_bot_safe())
         await mcp.run_stdio_async()
     
